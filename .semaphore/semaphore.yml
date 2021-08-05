@@ -21,4 +21,5 @@ blocks:
           - sem-version ruby 2.6.5
           - cache restore
           - bundle install --deployment --path vendor/bundle
+          - bundle exec rake db:setup
           - cache store
